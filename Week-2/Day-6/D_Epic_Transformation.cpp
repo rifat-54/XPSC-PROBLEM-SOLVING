@@ -1,41 +1,62 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-int main() {
+int main()
+{
    ios::sync_with_stdio(false);
    cin.tie(nullptr);
-
+   
    int t;
-   cin >> t;
-   while (t--) {
-      int n, m;
-      cin >> n >> m;
-      map<int, set<int>> mp;
-      for (int i = 1;i <= n;i++) {
-         int x;
-         cin >> x;
-         mp[x].insert(i);
-      }
+   cin>>t;
+   while (t--)
+   {
+   map<int,int>mp;
+     int n;
+     cin>>n;
+        for (int i =1; i <= n; i++)
+        {
+            int x;
+            cin>>x;
+            mp[x]++;
+        }
 
-      for (int i = 1;i <= m;i++) {
-         int l, r;
-         cin >> l >> r;
-         if ((mp.find(l) == mp.end()) || (mp.find(r) == mp.end())) {
-            cout << "NO" << '\n';
-         }
-         else {
-            int sl, sr;
-            sl = *mp[l].begin();
-            sr = *mp[r].rbegin();
-            if (sl < sr) {
-               cout << "YES" << '\n';
+        priority_queue<int>pq;
+        for(auto [x,y]:mp)
+        {
+            pq.push(y);
+        }
+
+        while (!pq.empty())
+        {
+            if(pq.size()<2)
+            {
+                break;
             }
-            else {
-               cout << "NO" << '\n';
-            }
-         }
-      }
+            int a=pq.top();
+            pq.pop();
+            a--;
+            int b=pq.top();
+            pq.pop();
+            b--;
+            if(a>0)
+            pq.push(a);
+            if(b>0)
+            pq.push(b);
+        }
+
+        int ctn=0;
+        while (!pq.empty())
+        {
+            ctn=ctn+pq.top();
+            pq.pop();
+        }
+
+        cout<<ctn<<'\n';
+        
+        
+        
    }
-
-   return 0;
+    
+     
+     
+    return 0;
 }
