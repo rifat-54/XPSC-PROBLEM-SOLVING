@@ -8,10 +8,11 @@ int main()
    int n,m;
    cin>>n>>m;
    vector<int> a(n),b(m);
-
+    int c[n];
    for (int i = 0; i < n; i++)
    {
     cin>>a[i];
+    c[i]=-1;
    }
    for (int i = 0; i < m; i++)
    {
@@ -20,8 +21,9 @@ int main()
 
    int l=0,r=0,sum=0;
    int ctn=0;
-   int c[n];
-   memset(c,sizeof(c),-1);
+   
+   
+   
    while (r<m)
    {
        if(l<n && a[l]<=b[r])
@@ -39,7 +41,7 @@ int main()
        }
    }
 
-   cout<<sum;
+   cout<<sum<<'\n';
    
     
      
