@@ -1,0 +1,1 @@
+{"name":"Local: Adjacent_Sum_Array","url":"e:\\Phitron\\XPSC\\week-5\\Day-4\\Adjacent_Sum_Array.cpp","tests":[{"id":1732725080220,"input":"2\n3\n9 7\n4\n4 4 4","output":"2 5 4\n2 2 2 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\XPSC\\week-5\\Day-4\\Adjacent_Sum_Array.cpp","group":"local","local":true}
