@@ -11,23 +11,9 @@ int main()
     {
         int n;
         cin >> n;
-        int a=0,b=n;
-        for (int i = 0; i <=n; i++)
-        {
-            for (int j = 0; j <=n; j++)
-            {
-                int dif=abs(i-j);
-                int xorr=i^j;
-                if(xorr==n){
-                    int ab=abs(a-b);
-                  if(dif<ab){
-                    a=i;
-                    b=j;
-                  }
-                }
-            }
-            
-        }
+        int b=(1<<__lg(n));
+        int a=(n^b);
+       
 
         cout<<a<<" "<<b<<'\n';
         
