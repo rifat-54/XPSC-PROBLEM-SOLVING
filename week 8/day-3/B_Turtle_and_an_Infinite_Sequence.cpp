@@ -14,12 +14,9 @@ int main()
 
     
 
-    if(s==0){
-        cout<<n<<'\n';
-    }else{
-        long long ans=n|((1LL<<(s+1))-1);
-        cout<<ans<<'\n';
-    }
+    long long maxNum=n+s;
+    long long maxbit=__lg(maxNum);
+    
 
      
     
