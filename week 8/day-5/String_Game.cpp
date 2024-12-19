@@ -13,16 +13,19 @@ int main()
         cin >> n;
         string s;
         cin >> s;
-        for (int i = 0; i < n - 1; i++)
-        {
-            if (i % 2 == 0)
-            {
-                if (s[i] != s[i + 1])
-                {
-                    
-                }
+        int ctn=0;
+        for(char c:s){
+            if(c=='1'){
+                ctn++;
             }
         }
+        int j=min(ctn,(n-ctn));
+        if(j%2==0){
+            cout<<"Ramos\n";
+        }else{
+            cout<<"Zlatan\n";
+        }
+       
     }
 
     return 0;
