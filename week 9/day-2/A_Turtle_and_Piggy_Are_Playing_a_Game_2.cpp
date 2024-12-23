@@ -11,15 +11,18 @@ int main()
    {
     int n;
     cin>>n;
-    set<int>s;
+   vector<int>v(n);
+    
     for (int i = 0; i < n; i++)
     {
-        int x;
-        cin>>x;
-        s.insert(x);
+        
+        cin>>v[i];
+        
     }
 
-   cout<<*(s.begin()+2);
+   sort(v.begin(),v.end());
+   int t=n/2;
+   cout<<v[t]<<'\n';
 
     
 
