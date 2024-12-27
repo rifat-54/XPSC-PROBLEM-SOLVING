@@ -5,7 +5,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int t;
+    long long t;
     cin >> t;
     while (t--)
     {
