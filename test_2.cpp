@@ -1,26 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+#define ll int64_t
+#define M 1000000007
+#define N 1000000
+#define endl "\n"
+#define all(v) v.begin(), v.end()
+#define forn for (int i = 0; i < n; i++)
+#define yes cout << "YES" << endl
+#define no cout << "NO" << endl
+void solve()
+{
+
+}
 int main()
 {
-   ios::sync_with_stdio(false);
-   cin.tie(nullptr);
-   
-    int n;
-    cin>>n;
-    int maxbit=__lg(n);
-    cout<<n<<"  maxbit-> "<<maxbit<<'\n';
-    for (int i = 0; i <= maxbit; i++)
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
     {
-        if((n>>i)&1){
-            cout<<1<<" ";
-        }else{
-             cout<<0<<" ";
-        }
+        solve();
     }
-
-//    cout<< (5 & (1 << 2));
-    
-     
-     
     return 0;
 }
