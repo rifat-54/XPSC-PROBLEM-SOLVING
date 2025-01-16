@@ -1,0 +1,1 @@
+{"name":"Local: firsr&last_occerence","url":"e:\\Phitron\\XPSC\\Modeul\\Binary_Search\\firsr&last_occerence.cpp","tests":[{"id":1737007730850,"input":"10 3\n2 3 5 6 6 8 8 8 8 12\n8 12 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\XPSC\\Modeul\\Binary_Search\\firsr&last_occerence.cpp","group":"local","local":true}

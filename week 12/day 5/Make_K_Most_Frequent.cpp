@@ -13,19 +13,25 @@ int main()
     cin>>n>>k;
     
     map<int,int>m;
+    vector<int>a(n);
     for (int i = 0; i < n; i++)
     {
         int x;
         cin>>x;
+        a.push_back(x);
         m[x]++;
     }
     int ctn=0;
     int kctn=m[k];
-    for (int i = 1; i <= 20; i++)
+    for (int i = 0; i <n; i++)
     {
-        int singleCount=m[i];
+
+        int singleCount=m[a[i]];
         if(singleCount>kctn){
+            m[a[i]]--;
             ctn++;
+        }else{
+            
         }
 
         // cout<<i<<"-> "<<m[i]<<"\n";
